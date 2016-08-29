@@ -1,0 +1,9 @@
+require(ggthemes)
+g <- ggplot(diamonds, aes(x=carat, y=price, color=color)) + geom_point()
+g
+
+
+g + theme_wsj()
+g + theme_economist() + scale_color_economist()
+g + theme_tufte()
+g + theme_excel() + scale_color_excel()
